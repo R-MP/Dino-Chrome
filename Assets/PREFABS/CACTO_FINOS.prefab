@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4476946280472331369}
   m_Layer: 0
   m_Name: CACTO_FINOS
-  m_TagString: Untagged
+  m_TagString: obstaculos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

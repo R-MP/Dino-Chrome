@@ -41,6 +41,7 @@
      <Compile Include="Assets\SCRIPTS\Movimentar.cs" />
      <Compile Include="Assets\SCRIPTS\Dino.cs" />
      <Compile Include="Assets\SCRIPTS\MovimentoChao.cs" />
+     <Compile Include="Assets\SCRIPTS\GameManager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

@@ -11,6 +11,8 @@ public class Dino : MonoBehaviour
     public Text pontosText;
     Rigidbody2D rb;
     Animator animator;
+    public GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,10 @@ public class Dino : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision){
         isJumping = false;
+
+        if(collision.gameObject.tag=="obstaculos"){
+            gameManager.GameOver();
+        }
     }
     
 }

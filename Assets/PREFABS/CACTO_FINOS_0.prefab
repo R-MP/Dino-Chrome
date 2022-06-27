@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4476946280472331369, guid: e9fe2dec166fc8f4a810c557a088a260, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.1666666
+      objectReference: {fileID: 0}
     - target: {fileID: 8382600788188492387, guid: e9fe2dec166fc8f4a810c557a088a260, type: 3}
       propertyPath: m_Name
       value: CACTO_FINOS_0
