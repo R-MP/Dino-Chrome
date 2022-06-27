@@ -304,6 +304,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Sprites_Chrome_Dinousaur_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 36
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0084b36a965b2fe4f939172c1eabd0a5
+      internalID: -2116460509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -324,6 +345,7 @@ TextureImporter:
       ground: 1214007736
       CACTO_1: 273341989
       CACTO_0: 1948570456
+      Sprites_Chrome_Dinousaur_1: -2116460509
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

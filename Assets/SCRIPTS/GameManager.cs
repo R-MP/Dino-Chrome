@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         Painel.SetActive(true);
     }
+
+    public void Restart(){
+        SceneManager.LoadScene("SampleScene");
+    }
     // Update is called once per frame
     void Update()
     {
