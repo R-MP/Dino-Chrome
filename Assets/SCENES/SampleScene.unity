@@ -821,7 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956d23fd4bb4e44488a57c45ba1b499c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 1500
+  jumpPower: 150000
   pontosText: {fileID: 1837531307}
   gameManager: {fileID: 68471615}
 --- !u!95 &1175517192
@@ -1153,6 +1153,7 @@ MonoBehaviour:
   - {fileID: 8382600788188492387, guid: e9fe2dec166fc8f4a810c557a088a260, type: 3}
   - {fileID: 2546070918102849106, guid: 207727d4bee4cbe42a6e6cd5f411069a, type: 3}
   - {fileID: 8675890357302745810, guid: 139a162b72ce22f44bb455c593218218, type: 3}
+  - {fileID: 5342773672451094429, guid: 76a4a2ac6b9a0e84d8b7333f06fd37cc, type: 3}
   delayInicial: 1
   delayEnterCactos: 1.5
 --- !u!4 &1409367205
@@ -1163,7 +1164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409367203}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.42, y: 0.57, z: 0.03465071}
+  m_LocalPosition: {x: 14.6, y: 0.57, z: 0.03465071}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

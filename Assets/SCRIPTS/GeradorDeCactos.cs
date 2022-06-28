@@ -7,13 +7,20 @@ public class GeradorDeCactos : MonoBehaviour
     public GameObject[] cactoPrefabs;
     public float delayInicial;
     public float delayEnterCactos;
+    
     void Start()
     {
         InvokeRepeating("GeradorCacto", delayInicial, delayEnterCactos);
     }
     void GeradorCacto()
     {
-        var cactoPrefab = cactoPrefabs[Random.Range(0, 3)];
-        Instantiate(cactoPrefab, transform.position, Quaternion.identity);
+        
+        var cactoPrefab = cactoPrefabs[Random.Range(1, 4)];
+        if(cactoPrefab == cactoPrefabs[3]){
+            Instantiate(cactoPrefab, new Vector3(transform.position.x, Random.Range(1.5f, 3f), transform.position.z), Quaternion.identity);
+        }else{
+            Instantiate(cactoPrefab, transform.position, Quaternion.identity);
+        }
+        
     }
 }
