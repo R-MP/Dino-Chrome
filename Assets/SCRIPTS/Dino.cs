@@ -12,12 +12,16 @@ public class Dino : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     public GameManager gameManager;
+    BoxCollider2D bc;
+    SpriteRenderer sr;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+        bc = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -28,9 +32,11 @@ public class Dino : MonoBehaviour
             isJumping = true;
         }  
         if(Input.GetKey(KeyCode.DownArrow)){
-            animator.SetBool("abaixado", true);   
+            animator.SetBool("abaixado", true); 
+            bc.size = sr.bounds.size;  
         }else{
             animator.SetBool("abaixado", false);
+            bc.size = sr.bounds.size;
         }
 
         pontos += Time.deltaTime * 10;
