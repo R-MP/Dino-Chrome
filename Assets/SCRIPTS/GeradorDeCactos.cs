@@ -14,7 +14,7 @@ public class GeradorDeCactos : MonoBehaviour
     }
     void GeradorCacto()
     {
-        
+        delayEnterCactos = Random.Range(1.5f,4f);
         var cactoPrefab = cactoPrefabs[Random.Range(1, 4)];
         if(cactoPrefab == cactoPrefabs[3]){
             Instantiate(cactoPrefab, new Vector3(transform.position.x, Random.Range(1.5f, 3f), transform.position.z), Quaternion.identity);

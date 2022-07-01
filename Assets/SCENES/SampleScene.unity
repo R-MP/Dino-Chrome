@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diferencaX: 20
-  minX: -20
+  minX: -30
 --- !u!1 &68471613
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diferencaX: 20
-  minX: 0
+  minX: -10
 --- !u!114 &1228996317
 MonoBehaviour:
   m_ObjectHideFlags: 0
