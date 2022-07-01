@@ -16,5 +16,9 @@ public class Movimentar : MonoBehaviour
     void Update()
     {
         transform.Translate(direcao * velocidade * Time.deltaTime);
+
+        if(transform.position.x <= -10 && gameObject.tag == "obstaculos"){
+            Destroy(gameObject);
+        }
     }
 }
