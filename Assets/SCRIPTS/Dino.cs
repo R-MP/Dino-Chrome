@@ -14,6 +14,7 @@ public class Dino : MonoBehaviour
     public GameManager gameManager;
     BoxCollider2D bc;
     SpriteRenderer sr;
+    bool gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +28,12 @@ public class Dino : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isJumping == false){
+        gameOver = GameManager.gameOver;
+        if(Input.GetKeyDown(KeyCode.Space) && isJumping == false && gameOver == false){
             rb.AddForce(new Vector2(0, jumpPower));
             isJumping = true;
         }  
-        if(Input.GetKey(KeyCode.DownArrow)){
+        if(Input.GetKey(KeyCode.DownArrow) && gameOver == false){
             animator.SetBool("abaixado", true); 
             bc.size = sr.bounds.size;  
         }else{
